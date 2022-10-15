@@ -25,7 +25,8 @@ class Handler implements URLHandler {
                 for (String s : str) {
                     if (s.contains(parameter[1])) {
                         items += s + ", "; 
-                    } else { return "Sorry, there is no item that matches your search"; } 
+                    } 
+                    else { return "Sorry, there is no item that matches your search"; } 
                 } return String.format("The items that match your search are %s ", items);
             } 
         } return "404 Not Found!";
